@@ -86,3 +86,30 @@ export const BtnComprar = styled.button`
     );
   }
 `
+
+export const BtnComprarSelected = styled.button`
+  display: block;
+  width: 100%;
+  background-image: linear-gradient(
+    45deg,
+    ${cores.corPrincipalSelected},
+    ${cores.corSecundariaSelected}
+  );
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 0;
+  text-transform: capitalize;
+  color: #eee;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 8px;
+
+  &:hover {
+    background-image: linear-gradient(
+      -45deg,
+      ${cores.corPrincipalSelected},
+      ${cores.corSecundariaSelected}
+    );
+  }
+`
